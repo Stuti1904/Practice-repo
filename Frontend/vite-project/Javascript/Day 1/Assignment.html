@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px black solid;
+            padding: 20px;
+            background-color: #e5e7eb;
+            color:black;
+            font-weight: 500;
+        }
+        #firstnu, #secondnu{
+            margin:5px;
+            align-self: center;
+        }
+        button{
+            margin:5px;
+            background-color:#334155;
+            color:white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label>Please enter the first number</label><input type="number"id="firstnu"><br>
+        <label>Please enter the second number</label><input type="number" id="secondnu">
+        <p>Please select the operation you want to perform:</p>
+        <input type="radio" id="addition" name="fav_language" value="+">
+        <label for="addition">Addition</label><br>
+        <input type="radio" id="subtraction" name="fav_language" value="-">
+         <label for="subtraction">Subtraction</label><br>
+        <input type="radio" id="multiplication" name="fav_language" value="*">
+        <label for="multiplication">Multiplication</label><br>
+        <input type="radio" id="division" name="fav_language" value="/">
+        <label for="division">Division</label><br>
+        <button id="calculate"onclick="calc()">Calculate</button>
+        <button id="reset"onclick="resetfunc()">Reset</button>
+    </form>
+    <script>
+        function resetfunc() {
+  document.getElementById("myForm").reset();
+}
+ function calc(){
+     var num1=parseInt(document.getElementById("firstnu").value);
+     var num2=parseInt(document.getElementById("secondnu").value);
+     if(document.getElementById("addition").checked){
+        alert(num1+num2);
+     }
+     else if(document.getElementById("subtraction").checked){
+        if(num1>num2){
+            alert(num1-num2);
+        }
+        else{
+            alert(num2-num1);
+        }
+     }
+     else if(document.getElementById("multiplication").checked){
+        alert(num1*num2);
+     }
+     else if(document.getElementById("division").checked){
+         if(num2!=0){
+            alert(num1/num2);
+         }
+         else{
+            alert("Please enter second number greater than 0");
+         }  
+     }
+     else{
+         alert("Choose atleast one option!");
+     }
+}
+    </script>
+</body>
+</html>

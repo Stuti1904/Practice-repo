@@ -1,0 +1,23 @@
+<div [formGroup]="userprofile">
+  <input type="number" placeholder="user id" formControlName="user_id"/>
+  <input type="text" placeholder="title" formControlName="title"/>
+  <input type="text" placeholder="body" formControlName="body"/>
+  <input type="number" formControlName="id" readonly/>
+  <button type="submit"  (click)="postinfo()">Create</button>
+  <button type="button" (click)="updateinfo()" >update</button>
+</div>
+<table aria-label="tabel">
+  <thead>
+    <th>ID</th>
+    <th> USER ID</th>
+    <th>TITLE</th>
+    <th>BODY</th>
+  </thead>
+  <tr *ngFor="let item of posts">
+   <td>{{item.id}}</td> 
+   <td>{{item.user_id}}</td> 
+   <td>{{item.title}}</td> 
+   <td>{{item.body}}</td>
+   <td><button (click)="editinfo(item)">Edit</button></td>
+  </tr>
+</table>

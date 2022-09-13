@@ -1,0 +1,18 @@
+/*with cte_rank(salary, RankAccToSalary)
+AS
+(
+	SELECT Salary, RANK() OVER(ORDER BY SALARY DESC) FROM EMPLOYEES
+	)
+
+	SELECT * FROM cte_rank*/
+
+WITH CTE_FOURTH(SALARY, FIRSTNAME, rank1)
+AS
+(
+SELECT SALARY, FIRSTNAME, DENSE_RANK() OVER(ORDER BY SALARY DESC) as rank1 FROM Employees 
+)
+SELECT * FROM CTE_FOURTH where rank1=4
+
+
+
+

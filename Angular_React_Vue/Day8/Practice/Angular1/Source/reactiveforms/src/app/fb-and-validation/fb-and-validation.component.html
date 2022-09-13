@@ -1,0 +1,5 @@
+<form [formGroup]="loginform" (ngSubmit)="status()">
+    <label>Email</label><input type="text" formControlName="email">
+    <label>Password</label><input type="text" formControlName="password">
+    <button type="submit">Login</button>
+</form>

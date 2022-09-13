@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flip{
+            background-color:blanchedalmond;
+            margin-top:0px;
+        }
+        .list{
+            display:flex;
+            list-style:none;
+            padding:10px;
+        }
+        .items{
+            margin:10px;
+        }
+        .folders{
+            display:none;
+        }
+    </style>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="flip">
+        <ul class="list">
+            <li class="items" id="item1"> Day 1
+                <ul class="folders" id="folder1">
+                    <li>Practice</li>
+                    <li>Assignment</li>
+                </ul>
+            </li>
+            <li class="items" id="item2"> Day 2
+                <ul class="folders" id="folder2">
+                    <li>Practice</li>
+                    <li>Assignment</li>
+                </ul>
+            </li>
+            <li class="items" id="item3"> Revision
+                <ul class="folders" id="files">
+                    <li><a href="../Revision/re1.html">Revision 1</a></li>
+                    <li><a href="../Revision/re2.html">Revision 2</a></li>
+                    <li><a href="../Revision/re3.html">Revision 3</a></li>
+                    <li><a href="../Revision/re4.html">Revision 4</a></li>
+                    <li><a href="../Revision/re5.html">Revision 5</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#item1").click(function(){
+                $("#folder1").slideToggle();
+            });
+            $("#item2").click(function(){
+                $("#folder2").slideToggle();
+            });
+            $("#item3").click(function(){
+                $("#files").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<label>Enter the product name</label><input type="text" [(ngModel)]="product.name">
+<label>Enter the product Price</label><input type="number" [(ngModel)]="product.price">
+<label>Enter the product quantity</label><input type="number" [(ngModel)]="product.quantity">
+<button type="button" (click)="check()">Add to cart</button>
+<app-product-list [products]= "products"></app-product-list>

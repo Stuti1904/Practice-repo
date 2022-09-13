@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header">
+     <span><h4>Admins</h4></span>
+    </div>
+    <table class="table table-striped" aria-label="table">
+        <thead class="thead-inverse">
+            <tr>
+                <th>UserID</th>
+                <th>UserName</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>role</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of userList">
+            <tr *ngIf="item.isActive==1">
+                <td id="row">{{item.userId}}</td>
+                <td>{{item.userName}}</td>
+                <td>{{item.age}}</td>
+                <td>
+                    <span *ngIf="item.gender == 15; else else1">
+                        Male
+                </span>
+                <ng-template #else1>Female</ng-template>  
+                </td>
+                <td>
+                    <span *ngIf="item.roleId == 1; else elseBlock">
+                        Admin
+                </span>
+                <ng-template #elseBlock>Consumer</ng-template>
+            </td>
+                <td class="d-flex"><button class="btn btn-primary m-1" [routerLink]="['edituser',item.userId]">Edit</button> 
+                <button class="btn btn-danger m-1" (click)="delete(item.userId)">Delete</button></td>
+            </tr>
+        </tbody>
+        </table>
+
+ 
+ 
+ 

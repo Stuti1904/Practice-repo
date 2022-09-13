@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       const person="Stuti Shahu";
+       const emp="2445-Stuti-Shahu";
+       const man="2445-man-Stuti-Shahu";
+       console.log(person.startsWith("S"));
+       console.log(person.startsWith("s"));
+       console.log(emp.startsWith("S",5));
+       console.log(emp.startsWith("S"));
+       console.log(man.endsWith("hu"));
+       console.log(man.includes("man"));
+       const multiply=(person,amount=5)=>person.repeat(amount);
+        const ans=multiply(emp,6);
+        console.log(ans);
+   </script> 
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+    {
+        "personid": "1",
+        "personame" : "rita",
+        "personaddress": "ahmeadabad"
+    },
+    {
+        "personid": "2",
+        "personame": "reema",
+        "personaddress": "clacutta"
+    }
+]

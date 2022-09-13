@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+<p>Display "Good day!" if the hour is less than 13:00:</p>
+<p id="demo">Good Evening!</p>
+<script>
+if (new Date().getHours() < 13) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+</script>
+<p>A time-based greeting:</p>
+<p id="de"></p>
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("de").innerHTML = greeting;
+</script>
+</body>
+</html>

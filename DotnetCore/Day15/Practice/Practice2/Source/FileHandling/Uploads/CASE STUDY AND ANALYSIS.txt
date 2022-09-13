@@ -1,0 +1,9 @@
+Hotstar was an angular.js (basic front-end Javascript for building single-page web-based apps) based website with major crawling issues. 
+
+It aimed to rank for non-brand queries with a limited amount of content. Queries that had “streaming”, “score”, “cricket” keywords in them were targeted because of the fantastic sports live streaming features they had obtained. Branded search terms such as “hotstar ipl match live” had a search volume of 18.1K whereas for non-branded ones like “today’s ipl match” the volume was 3.4M and thus, they decided to capitalize on this. 
+
+Their key focus was on search terms like “Live IPL match”, “IPL live match performance”. Not only live streaming of cricket matches, but also they provide content related to the match teams, players, gossip, and all other content that surrounds this field. And naturally, they intended to rank for all these search queries.
+
+MAIN SCOPE: VIDEO WATCHING
+
+FIRST MAKE THE VIDEOS Database

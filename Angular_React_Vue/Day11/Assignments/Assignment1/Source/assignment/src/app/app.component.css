@@ -1,0 +1,15 @@
+#left{
+    height: 100vh;
+    margin-left:0px;
+}
+#right{
+    height:100vh;
+}
+#image{
+    height:200px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top:30px;
+    margin-right: 50px;
+    align-items: center;
+}

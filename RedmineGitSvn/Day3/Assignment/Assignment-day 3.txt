@@ -1,0 +1,8 @@
+Assignment day 3
+
+Continued the extra exercise from day 2.
+Completed tasks from ignore them to commit lost
+Exercise link: https://gitexercises.fracz.com/exercise/case-sensitive-filename
+Repo links:https://github.com/rx-training/2445-Stuti-Feb22/tree/development
+	https://github.com/Stuti1904/Repo1/tree/Practical
+	https://github.com/Stuti1904/Practice-repo

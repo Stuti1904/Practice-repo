@@ -1,0 +1,9 @@
+<div class="card p-2 m-5">
+<h4 class="card-header">This is the rectangle component</h4>
+<label class="p-2">Lenght of the rectangle</label>
+<input type="number" [(ngModel)]="length">
+<label class="p-2">Breadth of the rectangle</label>
+<input type="number" [(ngModel)]="breadth">
+<button type="button" (click)="findArea()"class="w-25 bg-primary text-white m-2">Area</button>
+<p class="card-footer">The area of rectangle is {{area}}</p>
+</div>

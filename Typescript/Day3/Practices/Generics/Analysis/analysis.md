@@ -1,0 +1,1 @@
+Generics have a free data type. It is different from any type because we can have more control over the type we have enter and take from the user. 

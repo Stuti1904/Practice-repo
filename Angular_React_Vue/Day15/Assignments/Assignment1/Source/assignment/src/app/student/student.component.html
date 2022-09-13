@@ -1,0 +1,9 @@
+
+<div *ngFor="let item of list">
+    {{item.Stdid}} {{item.Stdname}} {{item.Stdadd}}
+  </div>
+  <input type="text" [(ngModel)]="id">
+  <input type="text" [(ngModel)]="name">
+  <input type="text" [(ngModel)]="address">
+  <button type="button" (click)="add()">Add student</button>
+  <button type="button" (click)="remove()">Remove student</button>

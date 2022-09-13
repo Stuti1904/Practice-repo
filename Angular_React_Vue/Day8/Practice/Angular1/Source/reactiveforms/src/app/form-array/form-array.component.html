@@ -1,0 +1,9 @@
+<form [formGroup]="arrayform">
+    <label>Hobbies</label>
+    <input type="text" formControlName=hobbies>
+    <button type="button" (click)="addhobbies()">Add another hobby</button>
+    <div *ngFor="let hobby of gethobbies.controls; let i=index">
+        <label> Extra hobby</label>
+        <input type="text" formControlName=i>
+    </div>
+</form>

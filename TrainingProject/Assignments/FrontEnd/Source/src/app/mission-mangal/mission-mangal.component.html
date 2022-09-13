@@ -1,0 +1,23 @@
+    <section id="card1" height="900px" class="darkblue text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <span *ngFor="let item of Info">
+                    <span *ngIf="">
+                    <div class="col-3">
+                        <button class="btn text-left">
+                            <div class="card border-0" style="width: 18rem;">
+                                <img class="card-img-top" src="../../assets/Images/missionmangal.jpg" alt="Card image cap" routerLink="/MissionMangal">
+                                <div class="card-body darkblue text-light">
+                                    <p>{{item.title}}</p>
+                                    <p>{{item.url}}</p>
+                                    <p>{{item.genre}}</p>
+                                    <p>{{item.contenttype}}</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    </span>
+                </span>
+            </div>
+        </div>
+       </section>

@@ -1,0 +1,14 @@
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\bin\Debug\netcoreapp3.1\FileHandling.exe
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\bin\Debug\netcoreapp3.1\FileHandling.deps.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\bin\Debug\netcoreapp3.1\FileHandling.runtimeconfig.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\bin\Debug\netcoreapp3.1\FileHandling.runtimeconfig.dev.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\bin\Debug\netcoreapp3.1\FileHandling.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\bin\Debug\netcoreapp3.1\FileHandling.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.csproj.AssemblyReference.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.AssemblyInfoInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.AssemblyInfo.cs
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.csproj.CoreCompileInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day10\Practice\Practice1\Source\FileHandling\obj\Debug\netcoreapp3.1\FileHandling.genruntimeconfig.cache

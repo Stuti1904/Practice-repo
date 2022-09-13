@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Assignment-HTML-Day1</title>
+    </head>
+    <body>
+        <form>
+          <label>Employee Name</label>  <input type="text" placeholder="onlyfirstname" required maxlength="30"><br>
+          <label>Employee Age</label> <input type="number" max="60" min="18"required><br>
+          <label> Gender</label><input type="radio" name="gender" id="male"required>
+          <label for=male>Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for=female>Female</label>
+          <input type="radio" name="gender" id="others">
+          <label for=others>Don't want to speicfy</label><br>
+          <label>Designation</label>  <input type="text" placeholder="designation" required maxlength="20"><br>
+          <label>Salary</label> <input type="number"required><br>
+          <label>Email</label>  <input type="email" placeholder="email address"required><br>
+          <label>Contact Number</label> <input type="number" minlength="10"maxlength ="10"  required><br>
+          <label>Date of Joining</label>  <input type="date"required><br>
+          <label> Location</label><input list="location"required>
+          <datalist id="location">
+            <option value="Ahmedabad">
+             <option value="Rajkot">
+             <option value="Vadodra">
+             <option value="Surat">
+          </datalist>
+          <button name="submit">Submit</button>
+        </form>
+    </body>
+</html>

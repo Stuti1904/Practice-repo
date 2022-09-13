@@ -1,0 +1,7 @@
+{
+    "sessionName": "Training Project",
+    "title": "hotstar",
+    "API": "dotnet",
+    "FrontEnd":"angular",
+    "Database": "sql"
+}

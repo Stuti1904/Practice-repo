@@ -1,0 +1,14 @@
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\bin\Debug\netcoreapp3.1\Assignments.exe
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\bin\Debug\netcoreapp3.1\Assignments.deps.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\bin\Debug\netcoreapp3.1\Assignments.runtimeconfig.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\bin\Debug\netcoreapp3.1\Assignments.runtimeconfig.dev.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\bin\Debug\netcoreapp3.1\Assignments.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\bin\Debug\netcoreapp3.1\Assignments.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.csproj.AssemblyReference.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.AssemblyInfoInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.AssemblyInfo.cs
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.csproj.CoreCompileInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\C#\Day1\Assignments\Source\Assignments\obj\Debug\netcoreapp3.1\Assignments.genruntimeconfig.cache

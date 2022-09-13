@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter date for validation</p>
+    <form>
+        <label>Enter month</label><input type="number" id="month">
+        <label>Enter Date</label><input type="number" id="date">
+        <label>Enter year</label><input type="number" id="year">
+        <button onclick="check()" type="button">Validate</button>
+    </form>
+    <script>
+        function check(){
+            var m=document.getElementById("month").value;
+            var d=document.getElementById("date").value;
+            var y=document.getElementById("year").value;
+
+            if(m>1 && m>12){
+                alert("INVALID MONTH!");
+            }
+            else{
+                if(d>1 && d>31){
+                    alert("INVALID DAY");
+                }
+                else{
+                    if(m==2){
+                        if(y%4!=0){
+                            if(d>28){
+                            alert("FEBURARY HAS ONLY 28 DAYS");
+                        }
+                        else{
+                            alert("VALI");
+                        }
+                        }
+                        else {
+                        if(d>29){
+                            alert("LEAP YEAR HAS 29 DAYS IN FEB");
+                        }
+                            else{
+                                alert("validate");
+                            }
+                        }
+                    }
+                }
+            }
+                if(m==4 || m==6 ||m==9 ||m==11){
+                    if(d>30 && d>1 ){
+                        alert("These months have only 30 days");
+                    }
+                    else{
+                        alert("Valid date1");
+                    }
+                }
+                else if(m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m==12){
+                    if(d>31 && d>1){
+                        alert("INVALID");
+                    }
+                    else{
+                        alert("valid date2")
+                    }
+                }
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <label>Please enter the first number</label><input type="number"id="firstnu"><br>
+        <p>Please select the operation you want to perform:</p>
+        <input type="radio" id="addition" name="fav_language" value="+">
+        <label for="addition">Push</label><br>
+        <input type="radio" id="subtraction" name="fav_language" value="-">
+         <label for="subtraction">Pop</label><br>
+        <input type="radio" id="multiplication" name="fav_language" value="*">
+        <label for="multiplication">Shift</label><br>
+        <input type="radio" id="division" name="fav_language" value="/">
+        <label for="division">Delete</label><br>
+        <button id="calculate"onclick="calc()"type="button">Calculate</button>
+        <button id="reset"onclick="resetfunc()">Reset</button>
+    </form>
+    <script>
+        function resetfunc() {
+  document.getElementById("myForm").reset();
+}
+ function calc(){
+    const array=[1,2,3];
+     var num1=parseInt(document.getElementById("firstnu").value);
+     if(document.getElementById("addition").checked){
+        array.push(num1);
+        document.write(array);
+     }
+     else if(document.getElementById("subtraction").checked){
+        if(array.length!=0){
+           array.pop();
+           document.write(array);
+        }
+        else{
+            document.write("NOTHING TO POP");
+        }
+     }
+     else if(document.getElementById("multiplication").checked){
+        array.shift();
+        document.write(array);
+     }
+     else if(document.getElementById("division").checked){
+         if(array.length!=0){
+             delete array[1];
+             document.write(array);
+         }
+         else{
+             document.write("NO ELEMENTS TO DELETE");
+         }
+     }
+     else{
+         alert("Choose atleast one option!");
+     }
+}
+    </script>
+</body>
+</html>

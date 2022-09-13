@@ -1,0 +1,1 @@
+In this assignment, I used arrays to store and display stock, since it was hard coded, there aren't any use cases. This assignment first stores some products along with their name, id and quantity and then as the customer buys a certain product, the quantity reduces and when the quantity goes below 5 a reorder request is raised.

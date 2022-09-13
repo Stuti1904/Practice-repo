@@ -1,0 +1,48 @@
+<div class="darkblue text-light addcard">
+<form [formGroup]="AddContent">
+
+   <div><label>Content title</label> <input type="text" class="form-control " placeholder="content title" formControlName="title"></div>
+ 
+   <div> <label>Language</label>  <input type="text" class="form-control" placeholder="language" formControlName="language"></div>
+  
+   <div> <label>Released date</label> <input type="date" formControlName="releasedDate" class="form-control"></div>
+  
+   <div><label>Description</label> <input type="text" class="form-control"formControlName="description" placeholder="Description"></div>
+   
+   <div><span>Please select content type:</span>
+    <input type="radio"  value=5 formControlName="contentType" >
+    <label class="text-light">Match</label>
+    <input type="radio"  value=3 formControlName="contentType" >
+    <label class="text-light" >Movie</label>
+    <input type="radio" value=4 formControlName="contentType">
+    <label class="text-light">Show</label></div>
+
+
+    <div><label for="genre"> Please Choose a Genre</label>
+    <select name="genre" id="genre" formControlName="genre" class="form-control">
+      <option value=8>Drama</option>
+      <option value=10>Thriller</option>
+      <option value=11>Action</option>
+        <option value=14>Mythology</option>
+        <option value=13>Kids</option>
+      </select>
+      </div> 
+
+
+     <div> <label>Length in minutes</label> <input type="number" name="lengthInMinutes" formControlName="lengthInMinutes" class="form-control" placeholder="Length in minutes"></div>
+
+     <div> <label>Resource ID</label> <input type="number" name="resourceId" formControlName="resourceId" class="form-control"></div>
+
+     <div> <label>Cast</label> <input type="text" class="form-control" name="cast" placeholder="enter comma seperated value" formControlName="cast" class="form-control"></div>
+
+     <div> <label>UserID</label><input type="number" name="userid" formControlName="createdBy" class="form-control" placeholder></div>
+
+<div>
+  <span> Please click true if the content is paid:</span>
+ <label>True</label> <input type="radio" name="isPaid" value="true" formControlName="isPaid">
+ <label>False</label><input type="radio" name="isPaid" value="false" formControlName="isPaid" checked>
+</div>
+
+     <div> <button (click)="addContent()" class="w-100 btn btn-outline-primary my-2">Submit</button> </div>
+</form>
+</div>

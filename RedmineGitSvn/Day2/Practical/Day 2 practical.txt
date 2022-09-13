@@ -1,0 +1,4 @@
+Day 2:
+
+Practice repo: https://github.com/Stuti1904/Practice-repo
+Topics done : stash, stage

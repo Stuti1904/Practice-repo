@@ -1,0 +1,8 @@
+Practical day-4
+
+1. Install SVN
+2. Learn basic concepts of SVN- clone repository, merge and resolve conflicts, commit files, update files, add file to ignore list.
+3. Cherry pick and rebase on github repository
+Repository link:https://github.com/Stuti1904/Practice-repo/tree/main
+		https://github.com/Stuti1904/Practice-repo/tree/main
+SVN repository link: http://64.20.53.52:8060/svn/Training-Feb-2021/Batch22/2445-Stuti.Shahu-Feb22

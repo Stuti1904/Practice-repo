@@ -1,0 +1,1 @@
+Today, we started with react. It was the part of the three languages that we were going to learn simultaneously. This language had similar structure as angular and vue. It is also used components as its building blocks. We learnt how to edit the html and css part of the components. 

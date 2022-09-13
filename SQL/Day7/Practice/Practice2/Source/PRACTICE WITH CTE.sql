@@ -1,0 +1,12 @@
+/*USING COMMON TABLE EXPRESSION*/
+
+WITH SALES_CTE(SalesPersonID, NumberOfOrders)
+AS
+(
+SELECT SalesPersonID, COUNT(*)
+FROM Sales.SalesOrderHeader
+WHERE SalesPersonID IS NOT NULL
+GROUP BY SalesPersonID
+)
+SELECT AVG(NumberOfOrders) AS "AVERAGE SALES PER PERSON"
+FROM SALES_CTE

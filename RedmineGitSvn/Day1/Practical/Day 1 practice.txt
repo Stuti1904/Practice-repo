@@ -1,0 +1,8 @@
+ Day 1:
+Practice pull, push and fork on your public repository.
+
+Repository url: https://github.com/Stuti1904/Practice-repo
+Forked a repository from the link given in the tutorial site. Forked site url: https://github.com/octocat/Spoon-Knife
+Pushed changes : 7
+Created a sample html file 
+

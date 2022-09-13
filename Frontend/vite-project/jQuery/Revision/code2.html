@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function weather(){
+        var  a=prompt("enter a number");
+        if(a<0){
+            return "cold";
+        }
+        else if(a>=0 && a<=10){
+            return "less cold";
+        }
+        else if(a>10 && a<=20){
+            return "much less cold";
+        }
+        else if(a>20 && a<=30){
+            return "spring";
+        }
+        else if(a>30 && a<=40){
+            return "hot";
+        }
+        else{
+            return "very hot";
+        }
+    }
+    var ans= weather();
+    alert(ans);
+    </script>
+</body>
+</html>

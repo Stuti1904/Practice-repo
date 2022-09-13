@@ -1,0 +1,47 @@
+<div class="w-75 mx-5 p-5">
+    <h1 class=" m-2"> Employee Form</h1>
+    <div class="d-block m-2 px-2">
+    <label class="d-block">ID: </label><input type="text" [(ngModel)]="employee.id">
+    </div>
+    <div class="d-block m-2 px-2">
+    <label class="d-block">Name: </label><input type="text" [(ngModel)]="employee.name">
+    </div>
+    <div class="m-2 px-2">
+    <label class="d-block">Adress: </label><input type="text" [(ngModel)]="employee.address">
+    </div>
+    <div class="m-2 px-2">
+    <input type="radio" id="male" name="gender" [(ngModel)]="employee.gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" [(ngModel)]="employee.gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" [(ngModel)]="employee.gender" value="other">
+    <label for="other">Other</label>
+    </div>
+    <div class="m-2 px-2">
+    <label class="d-block">Date of Joining</label><input type="text" [(ngModel)]="employee.date">
+    </div>
+    <div class="m-2 px-2">
+    <label class="d-block">Hobbies</label><input type="text"[(ngModel)]="employee.hobbies">
+    </div>
+    <button type="button" (click)="check()" class="m-2">Submit</button>
+    <table aria-label="table">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Date of Joining</th>
+            <th>Hobby</th>
+        </thead>
+        <tbody *ngFor="let item of employees">
+            <tr>
+                <td>{{item.empid}}</td>
+                <td>{{item.empname}}</td>
+                <td>{{item.empaddress}}</td>
+                <td>{{item.empgender}}</td>
+                <td>{{item.empdate}}</td>
+                <td>{{item.emphobby}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

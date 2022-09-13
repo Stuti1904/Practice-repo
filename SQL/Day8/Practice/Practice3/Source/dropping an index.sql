@@ -1,0 +1,3 @@
+/*DELETING AN INDEX*/
+
+DROP INDEX[NCI_PHO] ON dbo.employees

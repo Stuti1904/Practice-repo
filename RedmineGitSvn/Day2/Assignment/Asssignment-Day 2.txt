@@ -1,0 +1,5 @@
+Assignment- Day 2:
+ Repository link : https://github.com/Stuti1904/Repo1
+1 Create a master file
+2 Create 2 files but upload only one
+3 Upload a staged file.

@@ -1,0 +1,18 @@
+.items{
+    height: 30%;
+    width: 50%;
+}
+.darkbluewithheight{
+    background-color: #010414;
+    height: 200vh;
+}
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+.darkblue{
+    background-color: #010414;
+}
+.remove{
+    margin-top:1%
+}

@@ -1,0 +1,1 @@
+For day 4 I did more practice on concepts in typescript. This concepts used built in methods like date() method and map function. I have made different modules for them. Watching videos and reading the document helped me understand the concepts better. 

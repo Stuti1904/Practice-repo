@@ -1,0 +1,16 @@
+<div class="card p-2 m-5">
+<h4 class="card-header">This is Sign Up component</h4>
+<label class="p-2">Name</label>
+<input type="text" [(ngModel)]="Username">
+<label class="p-2">Address</label>
+<input type="text" [(ngModel)]="Address">
+<label class="p-2">Pan Number</label>
+<input type="text" [(ngModel)]="panNumber">
+<button type="button" (click)="sign()" class="w-25 bg-primary text-white m-2">Submit</button>
+<div class="card-footer">
+<p>Your name is: {{Username}}</p>
+<p>Your address is: {{Address}}</p>
+<p>Your pan number is: {{panNumber}}</p>
+<p>{{greeting}}</p>
+</div>
+</div>

@@ -1,0 +1,18 @@
+<app-logged-in-nav></app-logged-in-nav>
+<div class="container-fluid  darkbluewithheight p-5">
+    <h4 class="text-white">WatchList</h4>
+    <div class="row"> 
+    <div *ngFor="let item of playlist">
+        <div *ngFor="let content of Content">
+<span *ngIf="item.contentId==content.contentId">
+    <div class="card items darkblue">
+    <img src="../../assets/Images/571527-h.png" [routerLink]="['/contentdetail', content.title]">
+    <p class="text-light">{{content.title}}
+    <button class="btn btn-outline-primary remove" (click)="remove(item.playlistId)">Remove</button>
+    </p>
+</div>
+</span>
+</div>
+</div>
+</div>
+</div>

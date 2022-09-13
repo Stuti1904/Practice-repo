@@ -1,0 +1,1 @@
+SELECT LEN(FirstName) AS LENGTH FROM Employees WHERE PATINDEX('%C%', LastName)=3

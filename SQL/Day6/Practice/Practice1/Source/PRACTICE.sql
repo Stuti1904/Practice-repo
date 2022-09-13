@@ -1,0 +1,23 @@
+/*SUBQUERIES AND VIEWS PRACTICE*/
+
+SELECT FIRST_NAME, LAST_NAME FROM EMPLOYEE WHERE Salary<(SELECT SALARY FROM EMPLOYEE WHERE FIRST_NAME='John') /*FIRSTNAME AND LASTNAME OF THE EMPLOYEES WHOSE SALARY IS LESS THAN JOHN'S*/
+
+SELECT * FROM Person.ADDRESS WHERE AddressID IN(SELECT AddressID FROM PERSON.Address WHERE CITY= 'BOTHELL') /*SUBQUERIES WITH IN*/
+
+SELECT BusinessEntityID, JOBTITLE FROM HumanResources.Employee WHERE EXISTS(SELECT* FROM HumanResources.EmployeeDepartmentHistory WHERE BusinessEntityID= HumanResources.Employee.BusinessEntityID AND DepartmentID=4)
+
+SELECT DepartmentID
+FROM HumanResources.EmployeeDepartmentHistory
+WHERE BusinessEntityID = (SELECT BusinessEntityID from HumanResources.Employee
+WHERE BusinessEntityID = (SELECT EmailAddressID FROM Person.EmailAddress WHERE EmailAddress = 'taylor0@adventure-works.com' ))
+
+
+/*CREATING VIEW*/
+
+CREATE VIEW HUMANRESOURCES.EMPLOYEEHIREDATE AS SELECT P.FIRSTNAME, P.LASTNAME, E.HIREDATE FROM HumanResources.Employee AS E JOIN Person.Person AS P ON E.BUSINESSENTITYID= P.BusinessEntityID
+
+SELECT FirstName, LASTNAME, HIREDATE FROM HumanResources.EMPLOYEEHIREDATE ORDER BY LASTNAME
+
+
+
+

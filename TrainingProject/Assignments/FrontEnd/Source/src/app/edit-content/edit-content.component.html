@@ -1,0 +1,9 @@
+<form action="" [formGroup]="AddContent">
+    <div class="s_row m-3">
+        <input  placeholder="Enter the name of changed cast" tabindex="1" type="text" class="label_jump darkblue text-light border border-0 form-control" formControlName="cast" >                        
+    </div>                    
+    <div class="s_row m-3">
+      <input  placeholder="Enter the changed description" tabindex="1" type="text" class="label_jump  darkblue text-light border border-0 form-control" formControlName="description"> 
+     <button (click)="update(selectedContentId)">Submit</button>
+  </div>
+</form>

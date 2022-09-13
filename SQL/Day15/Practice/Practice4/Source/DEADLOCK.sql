@@ -1,0 +1,14 @@
+/*TRYING TO CREATE A DEADLOCK*/
+
+BEGIN TRAN
+UPDATE PERSON.Address SET StateProvinceID=78 WHERE AddressID=1
+
+UPDATE Person.Person SET FirstName='JOHN' WHERE BusinessEntityID=1
+
+COMMIT TRAN
+
+BEGIN TRAN
+UPDATE Person.Person SET FIRSTNAME='JOHN' WHERE BusinessEntityID=1
+
+UPDATE Person.Address SET StateProvinceID=78 WHERE AddressID=1
+COMMIT TRAN

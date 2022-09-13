@@ -1,0 +1,7 @@
+Practical day 3:
+
+Branching
+Merging
+Reverse Merging
+Resolving merging conflicts
+Repo link:https://github.com/rx-training/2445-Stuti-Feb22/tree/development

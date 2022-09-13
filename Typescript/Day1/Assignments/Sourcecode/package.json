@@ -1,0 +1,11 @@
+{
+  "name": "sourcecode",
+  "version": "4.6.0",
+  "description": "",
+  "main": "assignment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

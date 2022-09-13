@@ -1,0 +1,1 @@
+I learnt how to create components and how to call them in the main file. I also learnt about the naming convention of the components. I learnt that components are the building blocks of the app in mordern day frontend developing.

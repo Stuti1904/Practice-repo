@@ -1,0 +1,2 @@
+
+SELECT FirstName, '$'+FORMAT(Salary,'0000000000') AS SALARY FROM Employees

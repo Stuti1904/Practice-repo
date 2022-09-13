@@ -1,0 +1,30 @@
+.container-fluid {
+    position: relative !important;
+  }
+  .darkblue{
+    background: rgba(1, 7, 39) ;
+  }
+  .centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left:5%;
+    padding-right:5%;
+  }
+  .button{
+      padding-right: 10%;
+  }
+  .buttons :hover{background: rgba(31,128,224,0.4) !important}
+  .super{
+      color: #F6E70C;
+  }
+  .darkblueLight{
+    background: rgba(1, 7, 39, 0.8) ;
+  }
+  .header{
+      font-weight: normal;
+  }
+  .para{
+      
+  }

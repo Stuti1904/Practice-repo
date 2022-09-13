@@ -1,0 +1,17 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-3 bg-dark text-light" id="left">
+    <div class="card" id="image">
+      <img src="../../assets/me.png" alt="me" class="h-100 rounded">
+  </div>
+<a [routerLink]="['/about-me']" class="d-block text-light text-decoration-none  p-3 fs-3">About Me</a>
+<a [routerLink]="['/education-details']"  class="d-block text-light text-decoration-none p-3 fs-3">My Education</a>
+<a [routerLink]="['/skills-learnt']"  class="d-block text-light text-decoration-none p-3 fs-3">My skills</a>
+<a [routerLink]="['/my-hobbies']"  class="d-block text-light text-decoration-none p-3 fs-3">My hobbies</a>
+<a [routerLink]="['/projects-done']"  class="d-block text-light text-decoration-none p-3 fs-3">My Projects</a>
+</div>
+<div class="col-9 border" id="right">
+<router-outlet></router-outlet>
+</div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\bin\Debug\netcoreapp3.1\Day9ExtensionMethods.exe
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\bin\Debug\netcoreapp3.1\Day9ExtensionMethods.deps.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\bin\Debug\netcoreapp3.1\Day9ExtensionMethods.runtimeconfig.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\bin\Debug\netcoreapp3.1\Day9ExtensionMethods.runtimeconfig.dev.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\bin\Debug\netcoreapp3.1\Day9ExtensionMethods.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\bin\Debug\netcoreapp3.1\Day9ExtensionMethods.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.csproj.AssemblyReference.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.AssemblyInfoInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.AssemblyInfo.cs
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.csproj.CoreCompileInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day9\Practice\Practice3\Source\Day9ExtensionMethods\obj\Debug\netcoreapp3.1\Day9ExtensionMethods.genruntimeconfig.cache

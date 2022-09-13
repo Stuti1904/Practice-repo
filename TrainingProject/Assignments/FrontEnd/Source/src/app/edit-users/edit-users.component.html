@@ -1,0 +1,14 @@
+
+                <form [formGroup]="addAdmin" action="">
+                    <div class="s_row m-3">
+                        <input  placeholder="Enter your name" tabindex="1" type="text" class="label_jump darkblue text-light border border-0 form-control" formControlName="userName">                        
+                    </div>                    
+                    <div class="s_row m-3">
+                      <input  placeholder="Enter your age" tabindex="1" type="number" class="label_jump  darkblue text-light border border-0" formControlName="age">
+
+
+                     <button (click)="update(selectedUserId)">Submit</button>
+                  </div>
+                </form>
+           
+      

@@ -1,0 +1,9 @@
+<div class="card p-2 m-5">
+    <h4 class="card-header">THIS IS LOGIN PART</h4>
+    <label class="p-2"> Enter Username:</label>
+    <input type="text" [(ngModel)]="name">
+    <label class="p-2"> Enter Password:</label>
+    <input type="text" [(ngModel)]="passWord">
+    <button type="button" (click)="check()"class="w-25 bg-primary text-white m-2">Submit</button>
+    <h3 class="card-footer"> You are: {{answer}}</h3>
+</div>

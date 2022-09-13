@@ -1,0 +1,17 @@
+
+<table  aria-label="table">
+    <thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Price after discount</th>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let p of products">
+            <td>{{p.prdname}}</td>
+            <td>{{p.prdprice}}</td>
+            <td>{{p.prdquan}}</td>
+            <td>{{p.final}}</td>
+        </tr>
+    </tbody>
+</table>

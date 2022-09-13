@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">CLICK ME!</button>
+    <script>
+        const hii= () => console.log("hello");
+        hii();
+        const double=(value) => value*2;
+        const num= double(3);
+        console.log(num);
+        const multiply= (num1, num2)=> {
+            const result=num1*num2;
+            return result;
+        }
+        const pr=multiply(4,5);
+        console.log(pr);
+        const object = () =>({name:`Stuti`, age:20});
+        const person=object();
+        console.log(person);
+        const number=[1,2,3,4,5,6];
+        const big= number.filter(number => number>2)
+        console.log(big);
+        const inde = number.filter((number, index)=>{
+            console.log(index);
+        })
+        const p={
+            fname:"stuti",
+            lname:"shahu",
+        }
+         const btn=document.querySelector(".btn");
+         btn.addEventListener("click",()=>console.log("you clicked"));
+        setTimeout(function(){
+            console.log(`Hello this is ${p.fname} ${p.lname}`);
+        },5000)
+    </script>
+</body>
+</html>

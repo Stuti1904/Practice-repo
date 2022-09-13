@@ -1,0 +1,99 @@
+<h2 class="bg-dark text-light p-2"> STUDENT FORM</h2>
+<div class="card">
+    <form [formGroup]="profileForm" (ngSubmit)="submitdata()">       
+            <div formGroupName="Adress" class="d-flex card m-2 p-2">
+                <label class="card-header">Address</label> 
+                <label for="">City</label>
+                <input type="text" formControlName="City">  
+                <label for="">State</label>
+                <input type="text" formControlName="State">  
+                <label for="">County</label>
+                <input type="text" formControlName="Country">  
+                <label for="">Pin</label>
+                <input type="text" formControlName="Pin">  
+            </div>
+            <div formGroupName="Name" class="card d-flex card m-2 p-2">
+                <label class="card-header">Name</label>
+                <label for="">FirstName</label>
+                <input type="text" formControlName="FirstName">  
+                <label for="">MiddleName</label>
+                <input type="text" formControlName="MiddelName">  
+                <label for="">LastName</label>
+                <input type="text" formControlName="LastName"> 
+            </div>
+            <div formGroupName="FatherName" class="card d-flex card m-2 p-2">
+                <label class="card-header">Father Name</label>
+                <label for="">FirstName</label>
+                <input type="text" formControlName="FirstName">
+                <label for="">MiddleName</label>
+                <input type="text" formControlName="MiddelName">
+                <label for="">LastName</label>
+                <input type="text" formControlName="LastName" >
+                <label for="">Email</label>
+                <input type="email" formControlName="Email" >
+                <label for="">EducationQualification</label>
+                <input type="text" formControlName="EducationQualification" >
+                <label for="">Proffesion</label>
+                <input type="text" formControlName="Proffesion" >
+                <label for="">Designation</label>
+                <input type="text" formControlName="Designation" >
+                <label for="">PhoneNumber</label>
+                <input type="number" formControlName="PhoneNumber">
+            </div>
+            <div formGroupName="MotherName" class="card d-flex card m-2 p-2">
+                <label class="card-header">Mother Name</label>
+                <label for="">FirstName</label>
+                <input type="text" formControlName="FirstName">
+                <label for="">MiddleName</label>
+                <input type="text" formControlName="MiddelName">
+                <label for="">LastName</label>
+                <input type="text" formControlName="LastName">
+                <label for="">Email</label>
+                <input type="email" formControlName="Email">
+                <label for="">EducationQualification</label>
+                <input type="text" formControlName="EducationQualification">
+                <label for="">Proffesion</label>
+                <input type="text" formControlName="Proffesion">
+                <label for="">Designation</label>
+                <input type="text" formControlName="Designation">
+                <label for="">PhoneNumber</label>
+                <input type="number" formControlName="PhoneNumber">
+            </div>
+            <div class="card d-flex card m-2 p-2">
+            <label class="card-header">EmergancyContactlist</label>
+            <label>Name</label>
+            <input type="text" formControlName="EmergancyContactlist">
+            <label for="">Relation</label>
+                <input type="text" formControlName="Relation">
+                <label for="">Number</label>
+                <input type="number" formControlName="Number">
+            </div>
+                <div class="card d-flex card m-2 p-2">
+                    <label class="card-header">Refrence Details</label>
+                <label for="">ReferenceDetails</label>
+                <input type="text" formControlName="ReferenceDetails">
+                <label for="">ReferenceThrough</label>
+                <input type="text" formControlName="ReferenceThrough">
+                <label for="">AddressWithTelNo</label>
+                <input type="text" formControlName="AddressWithTelNo">
+            </div>
+            <button type="submit" class="btn btn-dark m-2 p-2"[disabled]="!profileForm.valid">Store</button>
+           
+    </form>
+    <table class="table table-striped" aria-label="table">
+        <thead>
+            <th>Student</th>
+            <th>Father</th>
+            <th>Mother</th>
+            <th>Emergency Contact</th>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let student of studentarray">
+            <td>{{student.FirstName}}</td>
+            <td>{{student.FatherName.FirstName}}</td>
+            <td>{{student.MotherName.FirstName}}</td>
+            <td>{{student.EmergancyContactlist}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

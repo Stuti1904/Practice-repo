@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header">
+     <span><h4>Content</h4></span>
+    </div>
+    <table class="table table-striped" aria-label="table">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Content Title</th>
+                <th>Description</th>
+                <th>Cast</th>
+                <th>Iasctive</th>
+                <th>IsPaid</th>
+                <th>Views</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of Content">
+            <tr *ngIf="item.isActive==1">
+                <td>{{item.title}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.cast}}</td>
+                <td>{{item.isActive}}</td>
+                <td>{{item.isPaid}}</td>
+                <td>{{item.views}}</td>
+                <td class="d-flex"><button class="btn btn-primary m-1" [routerLink]="['editcontent', item.contentId]">Edit</button> 
+                <button class="btn btn-danger m-1"(click)="delete(item.contentId)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

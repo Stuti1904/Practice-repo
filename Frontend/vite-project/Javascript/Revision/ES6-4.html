@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        const author="some author";
+        const statement="some statement";
+        const quote=highlight`Here is ${statement} by ${author} and it could not be more true`;
+        console.log(quote);
+        const result=document.getElementById("result");
+        result.innerHTML=quote;
+        function highlight(text, ...vars){
+            const awesomeText=text.map((item,index)=>{
+                return `${item} <strong class="blue">${vars[index] || ""}</strong>`
+            });
+            return awesomeText.join("");
+        }
+    </script>
+</body>
+</html>

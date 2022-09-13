@@ -1,0 +1,14 @@
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\bin\Debug\netcoreapp3.1\Day5P1.exe
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\bin\Debug\netcoreapp3.1\Day5P1.deps.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\bin\Debug\netcoreapp3.1\Day5P1.runtimeconfig.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\bin\Debug\netcoreapp3.1\Day5P1.runtimeconfig.dev.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\bin\Debug\netcoreapp3.1\Day5P1.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\bin\Debug\netcoreapp3.1\Day5P1.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.csproj.AssemblyReference.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.AssemblyInfoInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.AssemblyInfo.cs
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.csproj.CoreCompileInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day5\Practice\Practice1\Source\Day5P1\obj\Debug\netcoreapp3.1\Day5P1.genruntimeconfig.cache

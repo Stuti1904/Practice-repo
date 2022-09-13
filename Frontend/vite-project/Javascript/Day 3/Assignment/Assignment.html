@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-right:60px;
+            padding-left:60px;
+        }
+        form{
+            background-color: rgb(185, 226, 247);
+            padding:10px;
+        }
+        input{
+            width:auto;
+        }
+        button{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Employee Id</label><br>
+        <input type="number" id="empid"><br>
+        <span id="empids"></span><br>
+        <label>Employee Name</label><br>
+        <input type="text"id="empname"><br>
+        <span id="empNames"></span><br>
+        <label>Employee Age</label><br>
+        <input type="number"id="empage"><br>
+        <span id="ageemp"></span><br>
+        <label>Gender</label>
+        <input type="radio" id="male" name="empgender" id="empgender1">
+        <label>Male</label>
+        <input type="radio" id="female" name="empgender"id="empgender2">
+        <label>Female</label><br>
+        <span id="genderemp"></span><br>
+        <label>Designation</label><br>
+        <input type="text" id="empdes"><br>
+        <span id="desigemp"></span><br>
+        <label>Salary</label><br>
+        <input type="number"id="emps"><br>
+        <span id="salaryemp"></span><br>
+        <label>Location</label><br>
+        <select name="location" id="location">
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="vadodra">Vadodra</option>
+            <option value="anand">Anand</option>
+            <option value="rajkot">Rajkot</option>
+          </select><br>
+          <span id="locationemp"></span><br>
+          <label>Email Id</label><br>
+          <input type="email"id="empemail"><br>
+          <span id="emailemp"></span><br>
+          <label>Date Of Joining</label><br>
+          <input type="date"id="empdate"><br>
+          <span id="dateemp"></span><br>
+          <label>Contact Number</label><br>
+          <input type="text" id="mobile"><br>
+          <span id="phoneno"></span><br>
+          <button type="button" onclick="vali()">Submit</button>
+    </form>
+    <script>
+        function vali() {
+            var empids = document.getElementById('empid').value;
+            var pattern = /^.{5}|.{5}.$/;
+            var empnamee = document.getElementById('empname').value;
+            var empages = document.getElementById('empage').value;
+            var empgenders = document.getElementsByName('empgender');
+            var empDesgin = document.getElementById('empdes').value;
+            var empsalarys = document.getElementById('emps').value;
+            var emplocations = document.getElementById('location').value;
+            var empemails = document.getElementById('empemail').value;
+            var emailrgular = /^\w+@[a-zA-Z_]+?\.[a-zA-Z_]{2,3}$/;
+            var empdatee = document.getElementById('empdate').value;
+            var empphones = document.getElementById('mobile').value;
+
+            if (isNaN(empids) || (empids == "") || !pattern.test(empids)) {
+                var Error1 = "Enter Employee Id in Number Only And Must Have Atleast Five Digits";
+                return1 = false;
+
+            } else {
+                Error1 = "";
+                return1 = true;
+            }
+            document.getElementById('empids').innerHTML = Error1;
+             document.getElementById('empids').style.color = "Red";
+            if (empnamee == "") {
+                var Error2 = "Enter Employee Name";
+                return2 = false;
+            } else {
+                Error2 = "";
+                return2 = true;
+            }
+             document.getElementById('empNames').innerHTML = Error2;
+            document.getElementById('empNames').style.color = "Red";
+            if (isNaN(empages) || (empages == "")) {
+                var Error3 = "Enter Employee age in Number Only ";
+                return3 = false;
+
+            } else {
+                Error3 = "";
+                return3 = true;
+            }
+            document.getElementById('ageemp').innerHTML = Error3;
+            document.getElementById('ageemp').style.color = "Red";
+            var formgender = false;
+            var i = 0;
+            while (!formgender && i < empgenders.length) {
+                if (empgenders[i].checked) formgender = true;
+                i++;
+            }
+            if (!formgender) {
+                var Error4 = "Must check some option!";
+                return4 = false;
+            } else {
+                Error4 = "";
+                return4 = true;
+            }
+            document.getElementById('genderemp').innerHTML = Error4;
+            document.getElementById('genderemp').style.color = "Red";
+
+            if (empDesgin == "") {
+                var Error5 = "Enter Employee Designation";
+                return5 = false;
+            } else {
+                Error5 = ""
+                return5 = true;
+            }
+            document.getElementById('desigemp').innerHTML = Error5;
+            document.getElementById('desigemp').style.color = "Red";
+            if (isNaN(empsalarys) || (empsalarys == "")) {
+                var Error6 = "Enter Employee salary in Number Only ";
+                return6 = false;
+
+            } else {
+                Error6 = "";
+                return6 = true;
+            }
+            document.getElementById('salaryemp').innerHTML = Error6;
+            document.getElementById('salaryemp').style.color = "Red";
+            if (emplocations == "") {
+                var Error7 = "Select Emloyee Location ";
+                return7 = false;
+            } else {
+                Error7 = ""
+                return7 = true;
+            }
+            document.getElementById('locationemp').innerHTML = Error7;
+            document.getElementById('locationemp').style.color = "Red";
+            if ((empemails == "") || !emailrgular.test(empemails)) {
+                var Error8 = "Enter Employee Email Address";
+                return8 = false;
+
+            } else {
+                Error8 = "";
+                return8 = true;
+            }
+            document.getElementById('emailemp').innerHTML = Error8;
+            document.getElementById('emailemp').style.color = "Red";
+            if (empdatee == "") {
+                var Error9 = "Select Employee Date Of joining";
+                return9 = false;
+
+            } else {
+                Error9 = "";
+                return9 = true;
+            }
+            document.getElementById('dateemp').innerHTML = Error9;
+            document.getElementById('dateemp').style.color = "Red";
+            if (isNaN(empphones) || (empphones == "")) {
+                var Error10 = "Enter Employee Mobile No Only Number";
+                return10 = false;
+
+            } else {
+                Error10 = "";
+                return10 = true;
+            }
+            document.getElementById('phoneno').innerHTML = Error10;
+            document.getElementById('phoneno').style.color = "Red";
+            if ((return1 && return2 && return3 && return4 && return5 && return6 && return7 && return8 && return9 && return10) == true) {
+                alert("Done");
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

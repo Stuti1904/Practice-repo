@@ -1,0 +1,26 @@
+.darkblue{
+    background-color: #010414;
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #010414;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color:white;
+  }
+  
+.dropdown-content a{
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color:white;
+}
+.dropdown:hover .dropdown-content {display: block;}

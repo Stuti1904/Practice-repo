@@ -1,0 +1,51 @@
+<div class="darkblue p-2">
+<div class="text-light">
+  <div class="tabs" style="width:100%">
+     <a id="auth" (click)="show=!show"  tab-type="#login" class="m-1"><span  [class.abc]="show" class="text-light">LOGIN</span></a>
+    <a id="auth" (click)="show=!show"  tab-type="#register" class="m-1"><span [class.abc]="!show" class="text-light">REGISTER</span></a>
+  </div>
+  <!--Login-->
+      <div class="tab_data_wrap" *ngIf="show">
+          <form [formGroup]="loginForm">
+              <div class=" d-flex flex-row">
+                <span class="input-group-text darkblue border border-0 text-light" id="addon-wrapping">+91</span>
+                <input type="text" class="darkblue border border-0 text-light" placeholder="Enter your mobile number" aria-label="phone" aria-describedby="addon-wrapping" formControlName="phone">              
+              </div>
+              <div class=" d-flex flex-row pass">
+                <span class="input-group-text darkblue border border-0 text-light" id="addon-wrapping">   </span>
+                <input type="password" class="darkblue border border-0 text-light" placeholder="Enter your password" aria-label="password" aria-describedby="addon-wrapping" formControlName="password">              
+              </div>
+              <div class="bt m-3" >
+                  <button class="btn btn-outline-primary" (click)="login()" style="width:100%" type="submit">Continue</button>
+              </div>
+          </form>
+      </div>
+       <!--register-->
+      <div id="register"  *ngIf="!show" style="display: block;" class="p-0">
+          <form [formGroup]="SingupFormGroup" action="">
+              <div class="s_row m-3">
+                  <input id="main_user_login" placeholder="Enter your name" tabindex="1" type="text" class="label_jump darkblue text-light border border-0" formControlName="userName">                        
+              </div>
+              <div class="s_row m-3">
+                  <input id="main_user_login" placeholder="Enter your mobile number" tabindex="1" type="text" class="label_jump  darkblue text-light border border-0" formControlName="phone">
+              </div>
+              <div class="s_row m-3">
+                  <input id="main_user_login" placeholder="Create your Password" tabindex="1" type="password" class="label_jump  darkblue text-light border border-0" formControlName="password">
+              </div>
+              <div class="s_row m-3">
+                <input id="main_user_login" placeholder="Enter your age" tabindex="1" type="number" class="label_jump  darkblue text-light border border-0" formControlName="age">
+            </div>
+            <div class="s_row m-3">
+              <span>Please select your Gender:</span><br>
+  <input type="radio" name="gender" formControlName="gender" value=15>
+  <label class="mx-2">Male</label>
+  <input type="radio" name="gender" formControlName="gender" value=16>
+  <label >Female</label><br>
+          </div>
+              <div class="regi" >
+                  <button class="btn btn-outline-primary" style="width:100%" (click)="sendUser()" type="submit">Register</button>
+              </div>
+          </form>
+      </div>
+</div>
+</div>

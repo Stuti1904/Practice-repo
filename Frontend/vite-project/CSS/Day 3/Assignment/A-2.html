@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://kit.fontawesome.com/087d3315c2.js" crossorigin="anonymous"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .side{
+            float:left;
+            width:250px;
+           background-color: aqua;
+            height:1000px;
+            margin: 0px;
+            display:inline-flex;
+        }
+        img{
+           margin:20px;
+            padding: 10px;
+        }
+        .center{
+            width:75%;
+            height:100%;
+            margin-left: 250px;
+            margin-top: 0;
+            padding: 20px;
+        }
+       #nav li{
+            list-style-type: none;
+            padding-bottom: 10px;
+            font-size: 20pt;
+            padding-left: 2px;
+        }
+        #about{
+            padding: 10pt;
+            text-align:center;
+            font-size: 30pt ;
+        }
+        
+        h1{
+            font-size: 50pt;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #address{
+            font-size: 20pt;
+            text-align: right;
+            padding-bottom: 5px;
+        }
+        #phone{
+            text-align: right;
+            font-size: 20pt;
+            font-family: 'Times New Roman', Times, serif;
+            padding-bottom: 5px;
+            padding-top:2px;
+        }
+        #email{
+            text-align: right;
+            font-size: 20pt;
+            font-family: 'Times New Roman', Times, serif;
+            padding-bottom: 5px;
+            padding-top:2px;
+        }
+        #social li{
+           
+            list-style-type: none;
+            text-align: left;
+            display: inline;
+        }
+        #social li a{
+            padding-bottom:12px;
+            text-decoration: none;
+            font-size: 28pt;
+            text-align:left;
+            color: aqua;
+        }
+        #educational{
+            padding: 10px;
+            font-size: 20pt;
+            margin-bottom: 20px;
+        }
+        caption{
+            padding-top: 10px;
+            padding-bottom:5px;
+            font-size: 24pt;
+        }
+        #skills{
+            margin-top:20px;
+            font-size: 22pt;
+            margin-bottom: 0px;
+            padding:0px;
+        }
+        #skills ol li{
+            margin-top:0px;
+            font-size: 18pt;
+            padding-top: 0px;
+            padding-bottom:5px;
+        }
+        #hobbies{
+            margin-top: 20px;
+            padding:2px;
+            font-size: 22pt;
+        }
+        #projects{
+            font-size: 22pt;
+            padding:2px;
+            margin-top:20px;
+        }
+        #projects a{
+            text-decoration: none;
+            color:black;
+        }
+        #video{
+            margin-left: 250px;
+            padding: 20px;
+            position:sticky;
+            float: left;
+
+        }
+        @media screen and (max-width : 600px){
+            .side{
+                width:100%;
+                height: auto;
+                position: relative;
+            }
+            .side a{
+                float: left;
+
+            }
+            .center{
+                margin-left: 0px;
+            }
+        }
+        @media screen and (max-width : 400px){
+            .side {
+               
+                text-align: center;
+                float: none;
+                
+                display:inline;
+                padding-bottom:0px;
+            }
+        }
+        </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark position-sticky top-0">
+        <div class="container-fluid ">
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link text-white " aria-current="page" href="../../../HTML/Day 2/Extra exercise/index.html">HTML</a>
+                    <a class="nav-link text-white" href="index.html">CSS</a>
+                    <a class="nav-link text-white" href="../../vite-project/Bootstrap/index.html">Bootstrap</a>
+                    <a class="nav-link text-white" href="../../vite-project/Tailwind/index.html" tabindex="-1" aria-disabled="true">Taildwind</a>
+                    <a class="nav-link text-white" href="../../vite-project/JavaScript/index.html" tabindex="-1" aria-disabled="true">javaScript</a>
+                    <a class="nav-link text-white" href="../jQuery/index.html" tabindex="-1" aria-disabled="true">jQuery</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid h-100">
+        <div class="row  h-auto">
+            <div class="col-3 bg-secondary position-absolute vh-100 p-0">
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-white " style="width: full;">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                        <span class="fs-4">CSS</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item w-100">
+                            <a href="#submenu2" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 1
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu2" data-bs-parent="#menu">
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4 text-white">Practice</span></a>
+                                <ul class="collapse nav flex-column" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 1/Exercise/practice_!.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 1/Exercise/Practice_2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise</span> 2</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 1/Exercise/Practice_3.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise </span>3</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../../Day 1/Exercise/Practice_4.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 4</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../../Day 1/Exercise/Practice_5.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise </span>5</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../../Day 1/Exercise/Module-2-CSS-EX1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 6</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../../Day 1/Exercise/Module-2-CSS-EX2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 6</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul class="collapse nav flex-column p-1" id="submenu2" data-bs-parent="#menu">
+                                <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Assignment</span></a>
+                                <ul class="collapse nav flex-column" id="submenu4" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 1/Assignment/Resume.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 1/Assignment/Module-2-CSS-assignment-1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>2</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#submenu1" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 2
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu1" data-bs-parent="#menu">
+                                <a href="#submenu07" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Practice</span></a>
+                                <ul class="collapse nav flex-column" id="submenu07" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Exercise/Ex-1.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Exercise/Ex-2.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>2</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Exercise/Ex-3.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>3</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul class="collapse nav flex-column p-1" id="submenu1" data-bs-parent="#menu">
+                                <a href="#submenu04" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Assignment</span></a>
+                                <ul class="collapse nav flex-column" id="submenu04" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Assignment/As-1.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>1</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#submenu01" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 3
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu01" data-bs-parent="#menu">
+                                <a href="#submenu03" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4 text-white">Practice</span></a>
+                                <ul class="collapse nav flex-column" id="submenu03" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Exercise/P-1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Exercise/P-2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise</span> 2</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Exercise/P-3.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise </span>3</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../../Day 3/Exercise/P-4.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 4</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul class="collapse nav flex-column p-1" id="submenu01" data-bs-parent="#menu">
+                                <a href="#submenu08" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Assignment</span></a>
+                                <ul class="collapse nav flex-column" id="submenu08" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Assignment/A-1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Assignment/A-2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>2</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#submenu7" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 4
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu7" data-bs-parent="#menu">
+                                <a href="#submenu09" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Layout</span></a>
+                                <ul class="collapse nav flex-column" id="submenu09" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day4/Layout/Layout-try-1.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Layout </span>Design</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 bg-light position-absolute end-0 ">
+                <div class="side">
+                    <nav>
+                        <img src="d13.jpg" alt="" style="width: 100px; height: 100px;">
+                        <ul id="nav">
+                            <li> <a href="#about"><span class="fa-solid fa-book-open-reader">About</span></a></li>
+                            <li> <a href="#educational"><span class="fa-solid fa-graduation-cap">
+                                Study</span></a></li>
+                            <li> <a href="#skills"><span class="fa-solid fa-laptop">
+                                Skills</span></a></li>
+                            <li> <a href="#hobbies"><span class="fa-solid fa-person-skiing">Hobbies</span></a></li>
+                            <li> <a href="#projects"><span class="fa-solid fa-clipboard-list">
+                                Projects</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="center">
+                    <div id="about">
+                        <h1> STUTI SHAHU</h1>
+                        <p> I design webpages which are simple and easy.</p>
+                        <p id="address"> 6, Matru chaya, near sheetal cinema, gomtipur, Ahmedabad-380021</p>
+                        <p id="phone">+91 9106754761</p>
+                        <p id="email">stutishahu19@gmail.com</p>
+                        <ul id="social" style="padding-top:2px;">
+                            <li> <a href="https://twitter.com/shahu_stuti" tagret="_blank"> Twitter</a></li>
+                            <li> <a href="https://github.com/Stuti1904" tagret="_blank">Github</a></li>
+                            <li> <a href="https://www.instagram.com/stuti_shahu_/" tagret="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div id="educational"><table border="1" id="Educational">
+                        <Caption><strong>Educational details</strong> </Caption>
+                        <tr>
+                            <th>Class</th>
+                            <th> Makrs</th>
+                            <th> Institute</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                10th
+                            </td>
+                            <td>
+                                89%
+                            </td>
+                            <td>
+                                Seventh Day Adventist Higher Secondary School
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12th
+                            </td>
+                            <td>
+                                75%
+                            </td>
+                            <td>
+                                Seventh Day Adventist Higher Secondary School
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>
+                               Graduation-6th Sem
+                           </td>
+                           <td>
+                            7.81
+                        </td>
+                        <td>
+                            Gandhinagar Institute of Technology
+                        </td>
+                        </tr>
+                    </table></div>
+                    <div id="skills"><strong>Skills</strong>
+                        <ol id="skill">
+                            <li> Core Java</li>
+                            <li> CSS3</li>
+                            <li> HTML</li>
+                            <li> C</li>
+                            <li>Javascript</li>
+                        </ol></div>
+                    <div id="hobbies">
+                        <strong><h2> Hobbies</h2></strong>
+                        <p>I like to dance in my free time. I mostly do hip hop and freestyle including a bit of contemporary and bollywood.</p>
+                        <p> Apart from dancing I also like to read books and cook.</p>
+                    </div>
+                    <div id="projects">
+                        <strong> <h2>These are the projects I have done:</h2></strong>
+                        <ol>
+                            <li><a href="https://codepen.io/stutishahu/pen/VwagyWx" target="_blank">Tribute Page</a> </li>
+                            <li> <a href="https://codepen.io/stutishahu/pen/QWpRopy" target="_blank">Survey Form</a></li>
+                           
+                        </ol>
+                        
+                    </div>
+                   
+                </div>
+                 <div id="video">
+                    <video  controls  preload="auto"width="100%">
+                        <source src="video1200966376.mp4" type="video/mp4" >
+                        <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+                      Your browser does not support the video tag.
+                      </video>
+                </div>  
+      </div>
+    </div>
+</div>
+   </body> 
+</html>

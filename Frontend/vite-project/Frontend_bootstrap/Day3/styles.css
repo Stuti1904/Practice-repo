@@ -1,0 +1,58 @@
+#mainproject{
+    background-color: black;
+    color:white;
+    margin-left: 400px;
+}
+#nav{
+    border-bottom:blue 2px solid;
+    opacity:0.8;
+    margin-left: 420px;
+}
+#home{
+    background: url(images/im1.jpg) no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    min-height:700px;
+}
+#home .home-inner{
+    padding-top:150px;
+}
+#home .dark-overlay{
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height:700px;
+}
+.card-form{
+    opacity:0.8;
+}
+#home .fa{
+    color: blue;
+    background: white;
+    padding:4px;
+    border-radius: 5px;
+    font-size:30px;
+}
+#explore-section .fa{
+    color:white;
+    background:#333;
+    padding:4px;
+    border-radius:5px;
+    font-size:30px;
+}
+#create-section .fa{
+    color:white;
+    background:#333;
+    padding:4px;
+    border-radius:5px;
+    font-size:30px;
+}
+#share-section .fa{
+    color:white;
+    background:#333;
+    padding:4px;
+    border-radius:5px;
+    font-size:30px; 
+}

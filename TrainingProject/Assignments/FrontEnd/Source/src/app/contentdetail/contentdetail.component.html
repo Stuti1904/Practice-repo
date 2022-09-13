@@ -1,0 +1,84 @@
+<app-navigation></app-navigation>
+<div class="darkblue">
+    <section id="card1" height="1000px" class="darkblue text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <span *ngFor="let item of Info">
+                    <span *ngIf="item.title == selectedContentTitle">
+                        <div class="col-5">
+                            <button class="btn text-left">
+                                <div class="card border-0" style="width: 35rem;">
+                                    <div class="card-body darkblue text-light d-flex flex-row">
+                                        <div class="des m-0">
+                                            <h1 class="fw-bold">{{item.title}}</h1>
+                                            <p>{{item.description}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="play darkblue text-light d-flex flex-row con">
+                                        <span *ngIf="item.isPaid==1; else else1">
+                                            <button class="btn btn-outline-primary m-3"
+                                                routerLink="/subscribe">subscribe to watch</button>
+                                        </span>
+                                        <ng-template #else1>
+                                            <span>
+                                                <div *ngIf="item.contentType=='Movies'; else elseBlock"><a
+                                                        [routerLink]="['/videopage', item.title]"
+                                                        (click)="updateview(item.contentId)"><span
+                                                            class="m-2 text-light">&#9658; Watch Movie</span></a></div>
+                                            </span>
+                                            <ng-template #elseBlock><a [routerLink]="['/videopage', item.title]"
+                                                    (click)="updateview(item.contentId)"><span
+                                                        class="m-2 text-light">&#9658; Watch Episode</span></a>
+                                            </ng-template>
+                                        </ng-template>
+                                        <div class="watch" (click)="getWatchlist(item.title)">
+                                            <div class="watchlist"> +</div>
+                                            <div class="watch-text">Watchlist</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+
+                    </span>
+                </span>
+                <span *ngFor="let item of Content">
+                    <span *ngIf="item.title==selectedContentTitle">
+                        <div class="col-7 m-2">
+                            <div class="img-responsive"><img  src={{item.horizontalImage}} class="rounded"
+                                    alt="image"></div>
+                        </div>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="trailers darkblue">
+        <span *ngFor="let item of Content">
+            <span *ngIf="item.title==selectedContentTitle">
+                <p class="text-light heading">Trailers & Extras</p>
+                <a [routerLink]="['/videopage', selectedContentTitle]"> <img src={{item.horizontalImage}}
+                        class="trailerImage rounded" alt="image">
+                    <div class="bottom-left text-light">{{selectedContentTitle}}-Trailer</div>
+                </a>
+                <div class="top-right">30 sec</div>
+            </span>
+        </span>
+    </section>
+    <section class="morelikethis darkblue p-2">
+        <p class="text-light heading">More Like This</p>
+        <div class="container-fluid">
+            <div class="row">
+                <span *ngFor="let item of Content">
+                    <div class="col-3" *ngIf="item.isActive==1">
+                        <button class="btn text-left">
+                            <div class="card border-0" style="width: 18rem; height:20%">
+                                <img class="card-img-top image-cap" src={{item.verticalImage}} alt="Card image cap"
+                                    [routerLink]="['/contentdetail', item.title]">
+                            </div>
+                        </button>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </section>

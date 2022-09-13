@@ -1,0 +1,1 @@
+SELECT FirstName, LastName, HireDate FROM Employees WHERE DATENAME(DAY, HireDate)=7 OR DATENAME(Month, HireDate)='july'

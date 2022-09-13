@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* body{
+          margin-right: 200px; 
+          margin-left: 100px;
+          padding: 5%;
+         
+        } */
+        #educational{
+            padding-top: 100;
+            padding-bottom: 100;
+            align-items: center;
+        }
+        #skills{
+            margin:0;
+        }
+        #personal{
+            margin:0;
+        }
+        #project{
+            margin:0;
+        }
+        #footer{
+            margin:0;
+        }
+        #capt{
+            color:white;
+        }
+        #heading{
+
+            text-align: center;
+        }
+        #resume{
+         background-color: rgb(241, 241, 234);
+         width:80%;
+        padding: 10px;
+        border: 2px solid;
+        margin: 0;
+
+        }
+        img {
+            border: 2px solid black;
+        }
+        #projects a{
+            text-decoration: none;
+            color: black;
+        }
+        #first td{
+            width:100%;
+        }
+        #footer td{
+            width:100%;
+        }
+
+    </style>
+    <script src="https://kit.fontawesome.com/087d3315c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark position-sticky top-0">
+        <div class="container-fluid ">
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link text-white " aria-current="page" href="../../../HTML/Day 2/Extra exercise/index.html">HTML</a>
+                    <a class="nav-link text-white" href="index.html">CSS</a>
+                    <a class="nav-link text-white" href="../../vite-project/Bootstrap/index.html">Bootstrap</a>
+                    <a class="nav-link text-white" href="../../vite-project/Tailwind/index.html" tabindex="-1" aria-disabled="true">Taildwind</a>
+                    <a class="nav-link text-white" href="../../vite-project/JavaScript/index.html" tabindex="-1" aria-disabled="true">javaScript</a>
+                    <a class="nav-link text-white" href="../jQuery/index.html" tabindex="-1" aria-disabled="true">jQuery</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid h-100">
+        <div class="row  h-auto">
+            <div class="col-3 bg-secondary position-absolute vh-100 p-0">
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-white " style="width: full;">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                        <span class="fs-4">CSS</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item w-100">
+                            <a href="#submenu2" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 1
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu2" data-bs-parent="#menu">
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4 text-white">Practice</span></a>
+                                <ul class="collapse nav flex-column" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../Exercise/practice_!.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../Exercise/Practice_2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise</span> 2</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../Exercise/Practice_3.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise </span>3</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../Exercise/Practice_4.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 4</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../Exercise/Practice_5.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise </span>5</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../Exercise/Module-2-CSS-EX1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 6</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../Exercise/Module-2-CSS-EX2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 6</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul class="collapse nav flex-column p-1" id="submenu2" data-bs-parent="#menu">
+                                <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Assignment</span></a>
+                                <ul class="collapse nav flex-column" id="submenu4" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../Assignment/Resume.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../Assignment/Module-2-CSS-assignment-1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>2</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#submenu1" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 2
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu1" data-bs-parent="#menu">
+                                <a href="#submenu07" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Practice</span></a>
+                                <ul class="collapse nav flex-column" id="submenu07" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Exercise/Ex-1.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Exercise/Ex-2.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>2</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Exercise/Ex-3.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>3</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul class="collapse nav flex-column p-1" id="submenu1" data-bs-parent="#menu">
+                                <a href="#submenu04" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Assignment</span></a>
+                                <ul class="collapse nav flex-column" id="submenu04" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 2/Assignment/As-1.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>1</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#submenu01" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 3
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu01" data-bs-parent="#menu">
+                                <a href="#submenu03" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4 text-white">Practice</span></a>
+                                <ul class="collapse nav flex-column" id="submenu03" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Exercise/P-1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Exercise/P-2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Exercise</span> 2</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Exercise/P-3.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise </span>3</a>
+                                    </li>
+                                    <li class="w-100 px-5 ">
+                                        <a href="../../Day 3/Exercise/P-4.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline ">Exercise</span> 4</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul class="collapse nav flex-column p-1" id="submenu01" data-bs-parent="#menu">
+                                <a href="#submenu08" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Assignment</span></a>
+                                <ul class="collapse nav flex-column" id="submenu08" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Assignment/A-1.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>1</a>
+                                    </li>
+                                    <li class="w-100 px-5">
+                                        <a href="../../Day 3/Assignment/A-2.html" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Assignment </span>2</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#submenu7" class="nav-link px-0 align-middle text-white" data-bs-toggle="collapse">
+                                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Day 4
+                            </a>
+                            <ul class="collapse nav flex-column p-1" id="submenu7" data-bs-parent="#menu">
+                                <a href="#submenu09" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <span class="d-none d-sm-inline p-4">Layout</span></a>
+                                <ul class="collapse nav flex-column" id="submenu09" data-bs-parent="#menu">
+                                    <li class="w-100 px-5">
+                                        <a href="../CSS/Day4/Layout/Layout-try-1.html" target="blank" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Layout </span>Design</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 bg-light position-absolute end-0 ">
+                <div id="resume">
+                    <h1 id="heading">RESUME</h1>
+                   <table id="first" aria-label="table">
+                       <tr>  
+                         <th style="color:rgb(241, 241, 234);">Name</th>
+                      <td>
+                    <p>Name: Stuti Shahu</p>
+                    <p>Contact number: 9106754761</p>
+                    <p> Email address: stutishahu19@gmail.com</p>
+                    <p id="address">Adrress:6, matru chaya, bara sancha ni chali, near sheetal cinema, Gomtipur, Ahmedabad</p>
+                        </td>
+                      <td>  <img src="Image/PP-08-03.jpg" alt="Stuti Shahu" height="200"width="200"></td>
+                    </tr>
+                    </table>
+                    <hr>
+                    <table border="1" id="Educational">
+                        <Caption><strong>Educational details</strong> </Caption>
+                        <tr>
+                            <th>Class</th>
+                            <th> Makrs</th>
+                            <th> Institute</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                10th
+                            </td>
+                            <td>
+                                89%
+                            </td>
+                            <td>
+                                Seventh Day Adventist Higher Secondary School
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12th
+                            </td>
+                            <td>
+                                75%
+                            </td>
+                            <td>
+                                Seventh Day Adventist Higher Secondary School
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>
+                               Graduation-6th Sem
+                           </td>
+                           <td>
+                            7.81
+                        </td>
+                        <td>
+                            Gandhinagar Institute of Technology
+                        </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <strong>Skills</strong>
+                    <ol id="skills">
+                        <li> Core Java</li>
+                        <li> HTML, CSS</li>
+                        <li> C</li>
+                    </ol>
+                    <hr>
+                    <strong>Personal Skills</strong>
+                    <ul id="personal">
+                        <li>Can work very well with a team</li>
+                        <li>Has good leadership skills.</li>
+                    </ul>
+                    <hr>
+                    <strong> Projects done</strong>
+                    <ol id="projects">
+                        <li> <a href="https://codepen.io/stutishahu/pen/QWpRopy" target="_blank">Survey Form </a> </li><hr>
+                        
+                            <li> <a href="https://codepen.io/stutishahu/pen/VwagyWx"target="_blank"> Tribute Page</a></li>
+                            <video  controls  preload="auto"width="700" height="300">
+                             <source src="Image/video1200966376.mp4" type="video/mp4" >
+                             <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+                              Your browser does not support the video tag.
+                              </video>
+                              <hr>
+                    </ol>
+                    <hr>
+                    <p><strong>Declaration:</strong>I hereby declare that all the information is right according to my knowledge.</p>
+                    <hr>
+                    <table id="footer" aria-label="table">
+                        <th>..</th>
+                        <th>..</th>
+                        <tr>
+                            <td>
+                                Place: Ahmedabad
+                            </td>
+                            <td>
+                                Signature:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Date: 8-02-2022
+                            </td>
+                        </tr>
+                    </table>
+                </div>    
+      </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\bin\Debug\netcoreapp3.1\Day4A1.exe
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\bin\Debug\netcoreapp3.1\Day4A1.deps.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\bin\Debug\netcoreapp3.1\Day4A1.runtimeconfig.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\bin\Debug\netcoreapp3.1\Day4A1.runtimeconfig.dev.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\bin\Debug\netcoreapp3.1\Day4A1.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\bin\Debug\netcoreapp3.1\Day4A1.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.csproj.AssemblyReference.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.AssemblyInfoInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.AssemblyInfo.cs
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.csproj.CoreCompileInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day4\Assignments\Assignment1\Source\Day4A1\obj\Debug\netcoreapp3.1\Day4A1.genruntimeconfig.cache

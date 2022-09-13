@@ -1,0 +1,56 @@
+    <header class="darkblue text-white p-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                   <button routerLink="/home" class="logo rounded"> <img src="../../assets/Images/logo2.png" alt="logo" height="40" width="110"></button>
+                </div>
+                <div class=" d-flex flex-row">
+                    <div class="dropdown">
+                         <a  class=" text-light d-none d-md-inline dropbtn">TV</a>
+                        <div class="dropdown-content"> 
+                            <a href="#" >Star Plus</a>
+                             <a href="#">Star Bharat</a>
+                         </div>
+                         </div>
+                         <div class="dropdown">
+                            <a  class=" text-light d-none d-md-inline dropbtn">Movies</a>
+                           <div class="dropdown-content"> 
+                               <a href="#" >Hindi</a>
+                                <a href="#">English</a>
+                            </div>
+                            </div>
+                            <div class="dropdown">
+                                <a  class=" text-light d-none d-md-inline dropbtn">Sports</a>
+                               <div class="dropdown-content"> 
+                                   <a href="#" >Cricket</a>
+                                    <a href="#">Football</a>
+                                </div>
+                                </div>
+                         <a  class=" text-light d-none d-md-inline links mx-4">Disney</a>
+                         <a class="d-none d-md-inline linkskids">Kids</a> 
+                </div>
+                <div class="col-lg-3 ">
+                 <div class="input-group p-0 m-0" [formGroup]="searchForm">
+                     <input type="text" class="form-control d-none d-md-block" placeholder="search" formControlName="searchInput">
+                     <button class="btn btn-dark text-white d-none d-md-block" (click)="search()">Search</button>
+                 </div>
+                </div>
+                <div class="d-flex">
+                 <button class="btn btn-primary my-0 py-0" routerLink="/subscribe">Subscribe</button>
+                <span *ngIf="!isLoggedIn(); else logoutButton;">
+                    <a class="text-light  d-none d-lg-inline mx-2" (click)="openModal()">Log In</a>
+                  </span>
+                  <ng-template #logoutButton>
+                    <div class="dropdown">
+                        <a  class=" text-light d-none d-md-inline dropbtn">Welcome user</a>
+                       <div class="dropdown-content"> 
+                           <a href="#" >Profile</a>
+                            <a routerLink="/watchlist">WatchList</a>
+                            <a routerLink="/" (click)="logout()">Logout</a>
+                        </div>
+                        </div>
+                  </ng-template>
+             </div>
+            </div>
+        </div>
+    </header>

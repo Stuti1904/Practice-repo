@@ -1,0 +1,64 @@
+<div class="container-fluid darkblue" style="opacity:0.6">
+    <img src="../../assets/Images/gradient.png" alt="Avatar" class="image" style="width:100%">
+  </div>
+  <div class="centered .darkblueLight text-light ">
+    <h1 class=" m-2 header">Subscribe to watch all content on Disney+ Hotstar</h1>
+    <div class="darkblue p-5 rounded">
+      <table class="table text-light  mx-auto" (click)="uncheck()">
+          <thead class="mx-auto">
+              <th></th>
+              <th class="super">Super</th>
+              <th>Premium</th>
+          </thead>
+          <tbody class="mx-auto">
+              <tr class="mx-auto">
+                  <td>All Contents
+                      <p class="para">Movies, live sports, TV, Specials</p>
+                  </td>
+                  <td>&#10004;</td>
+                  <td>&#10004;</td>
+              </tr>
+              <tr>
+                  <td>Watch on TV or Laptop</td>
+                  <td>&#10004;</td>
+                  <td>&#10004;</td>
+              </tr>
+              <tr>
+                <td>Ads free movies and shows (except sports)</td>
+                <td>&#10006;</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr>
+                  <td>Number of devices that can be logged in</td>
+                  <td>2</td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>Max video quality</td>
+                  <td>Full HD (1080p)</td>
+                  <td>4K (2160p)</td>
+              </tr>
+              <tr>
+                  <td>Max audio quality</td>
+                  <td>Dolby 5.1</td>
+                  <td>Dolby 5.1</td>
+              </tr>
+          </tbody>
+      </table>
+      <div class="m-0 buttons">
+      <button class=" button btn btn-outline-secondary m-2"  (click)="check()">
+          <span class="m-0">Super</span>
+          <p>&#8377; 899/year</p>
+      </button>
+      <button class=" button btn btn-outline-secondary m-2" (click)="check()">  
+         <span class="m-0">Premium</span>
+        <p>&#8377; 1499/year</p>
+      </button>
+      <button class=" button btn btn-outline-secondary m-2"  (click)="check()">  
+         <span class="m-0">Premium</span>
+        <p>&#8377; 299/month</p>
+      </button>
+      </div>
+      <button class="btn btn-primary w-100" [disabled]="show" routerLink="/checkout">Continue></button>
+  </div>
+  </div>

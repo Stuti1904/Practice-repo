@@ -1,0 +1,17 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<form [formGroup]="loginformgourp"(ngSubmit)="submit()">
+  <label>Email</label><input type="text" formControlName="email">
+  <label>Password</label><input type="text" formControlName= "password">
+  <button type="submit">Login</button>
+</form>
+<p>------------------------------------------------------FORM ARRAY------------------------------------------------------------</p>
+<app-form-array></app-form-array>
+<p>---------------------------------------------FORM BUILDER AND VALIDATIONS-----------------------------------------------------</p>
+<app-fb-and-validation></app-fb-and-validation>

@@ -1,0 +1,57 @@
+<app-navigation></app-navigation>
+<div class="darkblueheight">
+    <div *ngFor="let item of Info">
+        <div *ngFor="let content of Content">
+        <span *ngIf="item.title==selectedContentTitle">
+            <span *ngIf="item.title==content.title">
+<video width="100%" height="700" controls autoplay>
+    <source src={{item.url}} type="video/mp4">
+    </video>
+    <button class="btn btn-outline-light m-1" (click)="like(content.contentId)"><span class="fa-regular fa-thumbs-up"></span>&nbsp;{{content.likes}}</button>
+    <button class="btn btn-outline-light m-1" (click)="dislike(content.contentId)"><span class="fa-regular fa-thumbs-down"></span>&nbsp;{{content.dislikes}}</button>
+
+    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal" (click)="set(content.contentId)">
+        <span class="fa-regular fa-comment"></span>
+      </button>
+    <button class="btn btn-outline-light m-1"(click)=" getcomments(content.contentId)"><span class="fa-regular fa-comments"></span></button>
+    <h4 class="text-light m-1">{{item.title}}</h4>
+    <p class="text-light m-1">{{item.description}}</p>
+</span>
+</span>
+</div>
+</div>
+<div class="text-light"> 
+    <h4 class="m-0 p-0">Comments:</h4>
+    <div *ngFor="let item of Comments">
+        <div *ngFor="let user of Users">
+            <span *ngIf="user.userId== item.userId">
+        <p class="border-bottom  border-secondary w-50">{{user.userName}} Says: {{item.comment1}}</p>
+    </span>
+    </div>
+</div>
+</div>
+ </div>
+  
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content darkblue text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Your Comment</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="CommentFormGroup">
+             <label>Comment</label> <input type="text" placeholder="comment here" formControlName="comment1">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-primary" (click)="postComment()">PostComment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

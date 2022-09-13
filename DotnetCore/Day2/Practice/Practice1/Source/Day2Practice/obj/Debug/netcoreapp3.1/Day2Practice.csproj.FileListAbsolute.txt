@@ -1,0 +1,14 @@
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\bin\Debug\netcoreapp3.1\Day2Practice.exe
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\bin\Debug\netcoreapp3.1\Day2Practice.deps.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\bin\Debug\netcoreapp3.1\Day2Practice.runtimeconfig.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\bin\Debug\netcoreapp3.1\Day2Practice.runtimeconfig.dev.json
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\bin\Debug\netcoreapp3.1\Day2Practice.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\bin\Debug\netcoreapp3.1\Day2Practice.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.csproj.AssemblyReference.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.AssemblyInfoInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.AssemblyInfo.cs
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.csproj.CoreCompileInputs.cache
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.dll
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.pdb
+C:\Users\stuti.shahu\Desktop\Training\2445-Stuti-Feb22\.NetCore\Day2\Practice\Practice1\Source\Day2Practice\obj\Debug\netcoreapp3.1\Day2Practice.genruntimeconfig.cache

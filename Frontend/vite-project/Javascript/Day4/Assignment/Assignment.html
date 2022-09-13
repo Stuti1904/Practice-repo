@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="form1-time-left"></p>
+    <form name="form1">
+        <label>Employee Id</label><br>
+        <input type="number" id="empid"><br>
+        <span id="empids"></span><br>
+        <label>Employee Name</label><br>
+        <input type="text"id="empname"><br>
+        <span id="empNames"></span><br>
+        <label>Employee Age</label><br>
+        <input type="number"id="empage"><br>
+        <span id="ageemp"></span><br>
+        <label>Gender</label>
+        <input type="radio" id="male" name="empgender" id="empgender1">
+        <label>Male</label>
+        <input type="radio" id="female" name="empgender"id="empgender2">
+        <label>Female</label><br>
+        <span id="genderemp"></span><br>
+        <label>Designation</label><br>
+        <input type="text" id="empdes"><br>
+        <span id="desigemp"></span><br>
+        <label>Salary</label><br>
+        <input type="number"id="emps"><br>
+        <span id="salaryemp"></span><br>
+        <label>Location</label><br>
+        <select name="location" id="location">
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="vadodra">Vadodra</option>
+            <option value="anand">Anand</option>
+            <option value="rajkot">Rajkot</option>
+          </select><br>
+          <span id="locationemp"></span><br>
+          <label>Email Id</label><br>
+          <input type="email"id="empemail"><br>
+          <span id="emailemp"></span><br>
+          <label>Date Of Joining</label><br>
+          <input type="date"id="empdate"><br>
+          <span id="dateemp"></span><br>
+          <label>Contact Number</label><br>
+          <input type="text" id="mobile"><br>
+          <span id="phoneno"></span><br>
+          <button type="button" onclick="vali()">Submit</button>
+    </form>
+    <script>
+        var total_seconds =60*180;
+        var c_minutes = parseInt(total_seconds/60);
+        var c_seconds = parseInt(total_seconds%60);
+        function CheckTime(){
+        document.getElementById("form1-time-left").innerHTML
+        ='Time Left: ' + c_minutes + ' minutes ' + c_seconds + ' seconds ' ;
+        if(total_seconds <=0){
+            setTimeout('document.form1.submit()',1);
+            alert("FORM SUBMITTED");
+        } else{
+            total_seconds = total_seconds -1;
+            c_minutes = parseInt(total_seconds/60);
+            c_seconds = parseInt(total_seconds%60);
+            setTimeout("CheckTime()",1000);
+        }}
+        setTimeout("CheckTime()",1000);
+        </script>
+</body>
+</html>

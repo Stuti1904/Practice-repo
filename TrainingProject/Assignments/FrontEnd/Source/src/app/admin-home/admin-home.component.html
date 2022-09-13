@@ -1,0 +1,117 @@
+    <nav class="navbar navbar-expand-sm darkblue text-light p-0">
+        <div class="container">
+            <a routerLink="/admin" class="navbar-brand text-light">Admin Panel</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item px-2">
+                        <a routerLink="/admin" class="nav-link text-light">Dashboard</a>
+                </ul>
+            </div>
+            <ul class="navbar-nav float-end ms-auto">
+                <li class="nav-item dropdown me-3">
+                    <a href="" class="nav-link text-light dropbtn">
+                      Welcome User  
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="profile.html">
+                           <span class="fa fa-user-circle"> </span>Profile
+                        </a>
+                        <a href="settings.html">
+                            <span class="fa fa-gear"> </span>Settings
+                         </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/home" class="nav-link text-light dropbtn">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="action" class="py-4 mb-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a (click)="openmodal()" class="btn darkblue text-light btn-block">
+                        <span class="fa fa-plus"></span>Add Resource
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a (click)="opencontent()" class="btn darkblue text-light btn-block" >
+                        <span class="fa fa-plus"></span>Add Content
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a (click)="openEpisode()"class="btn darkblue text-light btn-block" >
+                        <span class="fa fa-plus"></span>Add Episode
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a (click)="openuser()" class="btn darkblue text-light btn-block">
+                        <span class="fa fa-plus"></span>Add User
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                   <router-outlet></router-outlet>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center darkblue text-white m-1">
+                        <div class="card-body">
+                            <h3>Resources</h3>
+                            <h1>
+                                <span class=" fa-regular fa-floppy-disk"></span> 5
+                            </h1> 
+                            <a (click)="showresources()" class="btn btn-outline-light btn-sm">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center darkblue text-white m-1">
+                        <div class="card-body">
+                            <h3>Content</h3>
+                            <h1 class="display-4">
+                                <span class="fa-solid fa-folder-open"></span> 4
+                            </h1> 
+                            <a (click)="showcontent()" class="btn btn-outline-light btn-sm">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center darkblue text-white m-1">
+                        <div class="card-body">
+                            <h3>Users</h3>
+                            <h1 class="display-4">
+                                <span class="fa-solid fa-user"></span> 3
+                            </h1> 
+                            <a (click)="showuser()" class="btn btn-outline-light btn-sm">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center darkblue text-white m-1">
+                        <div class="card-body">
+                            <h3>Episode</h3>
+                            <h1 class="display-4">
+                                <span class="fa-regular fa-file-video"></span> 3
+                            </h1> 
+                            <a href="users.html" class="btn btn-outline-light btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer" class="mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="addPostModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-light">
+                    <h5 class="modal-title">Add Post</h5>
+                    <button class="close" data-bs-dismiss="modal"><span>&times;</span></button>
+                </div>

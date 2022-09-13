@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:white;
+            padding: 20px;
+        }
+        @media screen and (max-width : 600px){
+            p{
+                background-color: cadetblue;
+            }
+            
+        }
+        @media screen and (min-width : 600px){
+            p{
+                background-color: green;
+            }
+        }
+        @media screen and (min-width : 900px){
+            p{
+                background-color: red;
+            }
+        }
+        @media screen and (min-width : 1200px){
+            p{
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+         You have one h1 and one paragraph in your page with blue color border. For all the media screen and query selector (maximum width 500px) it should be change to red color border.
+
+            Media queries with breakpoint</p>
+</body>
+</html>

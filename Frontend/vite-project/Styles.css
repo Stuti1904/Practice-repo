@@ -1,0 +1,47 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+  }
+  body{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .side-bar{
+    background:rgba(23, 29, 82, 0.5);
+    backdrop-filter: blue(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y:auto;
+  }
+  .side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+  }
+  .side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+  }
+  .side-bar .menu .item a{
+    color: #ffff;
+    background: #8621f8;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px; 
+    line-height: 60px;
+  }
+  

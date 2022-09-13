@@ -1,0 +1,26 @@
+        <table class="table table-bordered h-50 w-100">
+          <caption hidden>
+            Post List Table
+          </caption>
+          <thead>
+              <th>Post ID</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Date</th>
+              <th>Image</th>
+              <th>Like</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let post of arrPost">
+              <td>{{ post.postID }}</td>
+              <td>{{ post.postName }}</td>
+              <td>{{ post.postDescription }}</td>
+              <td>{{ post.postedDate }}</td>
+              <td class="h-100"><img src="{{ post.postedImage }}" alt="test" class="img-fluid h-25"  /></td>
+              <td>
+                <button class="btn btn-primary" (click)="like(post)">Like</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  

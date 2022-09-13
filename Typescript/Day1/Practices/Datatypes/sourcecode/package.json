@@ -1,0 +1,11 @@
+{
+  "name": "sourcecode",
+  "version": "4.6.0",
+  "description": "node project",
+  "main": "arrayfunctions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

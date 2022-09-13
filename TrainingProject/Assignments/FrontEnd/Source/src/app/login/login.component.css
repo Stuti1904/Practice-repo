@@ -1,0 +1,40 @@
+.darkblue{
+    background-color: #010414;
+}
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#or{
+    text-align: center;
+    font-weight: normal;
+    font-size:16px;
+}
+.email{
+    border-bottom: 1px solid blue;
+}
+.tabs {
+    display: inline-flex;
+    width: 100%;
+    padding:1%;
+    margin:1%
+}
+#auth{
+    font-weight:light;
+}
+.abc{
+    border-bottom: 3px solid blue;
+    color: #24a3b5;
+}
+.label_jump{
+    border-bottom: 1px solid blue !important;
+}
+.pass{
+
+    margin-top:1%;
+}

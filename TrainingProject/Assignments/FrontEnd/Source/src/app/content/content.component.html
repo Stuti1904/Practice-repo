@@ -1,0 +1,19 @@
+<section id="main" class="darkblue content">
+    <strong class="mb-1 text-light heading">Top Content</strong>
+    <div class="container-fluid">
+        <div class="row pb-0">
+            <span *ngFor="let item of Content" class="mb-0 pb-0">
+                <div class="col-3 mb-0" *ngIf="item.isActive==1">
+                    <button class="btn text-left mb-0 pb-0">
+                        <div class="card border-0 images">
+                            <img class="img-fluid image-cap" src={{item.verticalImage}} alt="Card image cap" [routerLink]="['/contentdetail', item.title]" style="height:100%; width:100%">
+                            <!-- <div class="card-body darkblue text-light">
+                                <p>{{item.title}}</p>
+                            </div> -->
+                        </div>
+                    </button>
+                </div>
+            </span>
+        </div>
+    </div>
+</section>

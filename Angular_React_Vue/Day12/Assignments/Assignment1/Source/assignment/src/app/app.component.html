@@ -1,0 +1,25 @@
+<div>
+    <table aria-label="table">
+      <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of userList">
+          <td>{{ item.userID }}</td>
+          <td>{{ item.userName }}</td>
+          <td>
+            <button
+              (click)="details(item.userID)">
+              Details
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

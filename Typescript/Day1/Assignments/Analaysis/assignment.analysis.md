@@ -1,0 +1,1 @@
+In the assignment we used an array to create store data of 5 employees. Using an object and store various types of datas. Then using the filter method, I found out the index which was present in the array or not. We used template string to display the whole array without any brackets or commas. Adding another object in the array through concat() function.

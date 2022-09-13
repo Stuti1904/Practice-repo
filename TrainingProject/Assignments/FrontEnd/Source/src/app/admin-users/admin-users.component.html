@@ -1,0 +1,27 @@
+<p class="text-light">Add Admin</p>
+<div id="register" style="display: block;" class="p-0">
+    <form [formGroup]="addAdmin" action="">
+        <div class="s_row m-3">
+            <input id="main_user_login" placeholder="Enter your name" tabindex="1" type="text" class="label_jump darkblue text-light border border-0" formControlName="userName">                        
+        </div>
+        <div class="s_row m-3">
+            <input id="main_user_login" placeholder="Enter your mobile number" tabindex="1" type="text" class="label_jump  darkblue text-light border border-0" formControlName="phone">
+        </div>
+        <div class="s_row m-3">
+            <input id="main_user_login" placeholder="Create your Password" tabindex="1" type="password" class="label_jump  darkblue text-light border border-0" formControlName="password">
+        </div>
+        <div class="s_row m-3">
+          <input id="main_user_login" placeholder="Enter your age" tabindex="1" type="number" class="label_jump  darkblue text-light border border-0" formControlName="age">
+      </div>
+      <div class="s_row m-3">
+        <span>Please select your Gender:</span><br>
+<input type="radio" name="gender" formControlName="gender" value=15>
+<label class="mx-2 text-light">Male</label>
+<input type="radio" name="gender" formControlName="gender" value=16>
+<label class="text-light" >Female</label><br>
+    </div>
+        <div class="regi" >
+            <button class="btn btn-outline-primary" style="width:100%" (click)="sendUser()" type="submit">Register</button>
+        </div>
+    </form>
+</div>
